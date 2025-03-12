@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between; /* Alinha os itens nas extremidades */
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+  }
+  
+  .logo {
+    text-align: left; /* Alinha a logo à esquerda */
+  }
+  
+  .logo img {
+    max-width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+  }
+  
+  .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre os ícones */
+  }
+  
+  .header-icons img {
+    width: 30px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #ffbd59;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background-color: #CC0000;
+  }
+  
+  /* Grid de Produtos */
+  .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .product {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .product p {
+    color: #000000;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-links a:hover {
+    color: #FF0000;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    margin: 10px 5px;
+  }
+  
+  footer p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
